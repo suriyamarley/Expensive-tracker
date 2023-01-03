@@ -1,0 +1,378 @@
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');            
+
+*,*::after,
+::before{
+  margin: 0%;
+  padding:0%;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+html{
+  font-size: 16px;
+
+}
+:root{
+  --clr-white:white;
+  --clr-black:black;
+  --amber-yellow: #ffbe0bff;
+--orange-pantone: #fb5607ff;
+--winter-pink: #ff006eff;
+--blue-violet: #8338ecff;
+--azure-blue: #3a86ffff;
+--clr-box-shadow: 0px 15px 12px rgba(0,0,0,0.15) ;
+}
+body{
+ font-family: "Red Hat Text", sans-serif;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+ background-color: white;
+
+  
+}
+/* global css */
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+a{
+text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/* main-section-start*/
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: var(--clr-box-shadow);
+  padding: 2rem;
+  margin: 2rem;
+  gap: 1rem;
+ background-image: url(../assets/bill.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+
+}
+/* main-section-end */
+
+/* logo-section */
+
+.logo-container{
+  
+  width: 90px;
+}
+
+.app-logo{
+  margin-top:-1rem;
+  border-radius: 50%;
+}
+/* logo-section-end */
+
+/* app-title & para */
+
+.title{
+  font-size:1.55rem;
+  margin-top: -0.87rem;
+  border-bottom: 3px solid black;
+  padding-bottom: 1rem;
+  color: yellow;
+}
+
+.para{
+  font-size: 1rem;
+  margin-top: -1rem;
+  font-weight: 400;
+}
+
+/* app-title & para end*/
+
+/* balance-section start */
+
+.balance-container{
+  text-align: center;
+  margin-top: -1rem;
+
+}
+
+.balance-title{
+  margin-bottom: 0.4rem;
+  font-size: 1.22rem;
+  color: white;
+  
+}
+
+.amount-zero{
+color:black;
+
+}
+
+.income,.expense{
+  font-size: 1rem;
+  color:white;
+  margin-bottom: 0.3rem;
+}
+
+.income-amt{
+  color:green;
+}
+
+.expense-amt{
+  color: red;
+}
+/* balance-section-end */
+
+/* history-section-start */
+
+.history{
+  color:white;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: black;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.output-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+
+li {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  padding: 0.55rem 2rem;
+  background-color: white;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: flex;
+  gap: 4rem;  
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+
+
+/* btn */
+.btn {
+  width: 30px;
+  position: absolute;
+  padding: 3px 8px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s;
+  border: none;
+  color: white;
+  border-radius: 50%;
+}
+
+
+/* update btn */
+.update-btn {
+  right: -40px;
+  padding: 3px 6px;
+  background-color: #12bb4a;
+}
+
+.update-btn:hover {
+  background-color: #11e056;
+  transition: all 0.3s;
+}
+
+li:hover .update-btn {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+/* delete btn */
+.delete-btn {
+  right: -71px;
+  background-color: orangered;
+}
+
+li:hover .delete-btn {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.delete-btn:hover {
+  transition: all 0.3s;
+  background-color: red;
+}
+
+.history-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.history-title {
+  border-bottom: 1px solid #c3c2c2;
+  width: 25%;
+  padding-bottom: 5px;
+  margin: 1rem auto;
+}
+
+.minus {
+  border-right: 5px solid red;
+  color: #03256c;
+}
+
+.plus {
+  border-right: 5px solid green;
+  color: #03256c;
+}
+
+/* history-section-end */
+
+/* input-section start */
+
+.transaction{
+  margin-top: -1rem;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.45rem;
+  gap: 0.70rem;
+  
+}
+
+
+input{
+  padding: 0.4rem 3rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.input-title{
+  font-size: 1rem;
+}
+
+
+.text{
+  font-size: 0.70rem;
+  font-weight: 400;
+}
+
+/* input-section end */
+
+
+/* final transaction button */
+
+.button{
+  margin-top: 1rem;
+  padding:.50rem 1.8rem;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+}
+
+
+/* final transaction button end */
+
+
+
+
+.social-icons{
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.6rem;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  border-radius: 50%;
+ 
+
+}
+
+
+
+
+.icon:hover {
+  outline-offset: 4px;
+}
+
+
+button:hover{
+  color: white;
+  border: white solid 1px;
+  background:green;
+  transition: all 0.3s;
+}
+
+
+.fa-instagram {
+  color: #d62976;
+}
+
+.fa-instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf407 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+    );
+  outline-color: #a02d76;
+  border-radius: 8px;
+  color: white;
+}
+.fa-twitter{
+  color: #00ACEE;
+}
+.fa-twitter:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #00757F 45%,
+    #00ACEE 90%,
+    #30DBFF 60%,
+    #F5FBFA 5%,
+    #FFFFFF 0%
+    );
+  outline-color:skyblue;
+  color: white;
+  border-radius: 8px;
+}
+
+.fa-facebook{
+  color: blue;
+}
+
+.fa-facebook:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #00757F 45%,
+    #00ACEE 90%,
+    #30DBFF 60%,
+    #F5FBFA 0%,
+    #FFFFFF 0%
+    );
+  /* outline-color:skyblue; */
+  border-radius: 8px;
+  color: white;
+}
